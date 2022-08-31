@@ -1,0 +1,67 @@
+body {
+    background-image: linear-gradient(to top, #0a3871, #506293, #8690b6, #bcc1da, #f3f5ff);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+}
+
+/* Header */
+
+header {
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+}
+
+.logo_alura {
+    width: 31.09;
+    height: 48px;
+}
+
+/* Main */
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.codificador {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
+
+.decodificador {
+    width: 25%;
+    height: 100%;
+    background-color: hotpink;
+}
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.redes_sociales {
+   color: #f3f5ff;
+   margin-bottom: 15px;
+}
+
+i {
+    margin: 10px;
+}
+
+.texto_footer {
+    color: #f3f5ff;
+    font-size: 15px;
+}
+
+a {
+    color: #f3f5ff;
+}
