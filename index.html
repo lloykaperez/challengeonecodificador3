@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge One Codificador 3</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-    <header>
-        <img class="logo_alura" src="assets/images/Logo@2x.png" alt="Logo de Alura">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge One Codificador 3</title>
+        <!-- <link rel="stylesheet" href="assets/reset.css"> -->
+        <link rel="stylesheet" href="assets/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="cuerpo">
 
-    <main class="contenedor">
-
-        <section class="codificador">
-            <h1>Codificador</h1>
-            <textarea class="texto-ingresado" placeholder="Ingresa tu texto aquí"></textarea>
-            <p>Solo letras minúsculas y sin acentos</p>
-            <div class="botones">
-                <button class="btn-codigicador">Encriptar</button>
-                <button class="btn-decodificador">Desencriptar</button>
-            </div>
-        </section>
-
-        <section class="decodificador">
-            <h1>Decodificador</h1>
-            <textarea class="texto-copiado"></textarea>
-            <button class="copiar">Copiar</button>
-        </section>
-
-    </main>
-
-    <footer>
-       
-        <div class="redes_sociales">
-            
-            <a href="https://www.linkedin.com/in/lloykaperez/" target="blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            <a href="https://www.behance.net/lloykaperez" target="blank"><i class="fa-brands fa-behance fa-xl"></i></a>
-            <a href="https://github.com/lloykaperez" target="blank"><i class="fa-brands fa-github fa-xl"></i></a>
-            <a href="https://www.instagram.com/lloykaperez/" target="blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-
+            <header>
+                <a href="index.html">
+                    <img class="logoAlura" src="assets/images/Logo.png" alt="Logo de Alura">
+                </a>
+            </header>
+        
+            <main>
+        
+                <section class="codificador">
+                    <textarea id="paste" class="texto-ingresado" placeholder="Ingrese el texto aqui"></textarea>
+                    <p class="aviso"><img class="simbolo" src="assets/images/simbolo.png" alt="Simbolo de exclamación"> Solo letras minúsculas y sin acentos</p>
+                    <div class="contenedor-botones">
+                        <button class="codificar" onclick="btnCodificar()">Encriptar</button>
+                        <button class="decodificar" onclick="btnDescodificar()">Desencriptar</button>
+                    </div>
+                    <div class="botones-extra">
+                        <button class="reiniciar" onclick="window.location.href = 'index.html';">Reiniciar</button>
+                        <button class="pegar" onclick="btnPegar()">Pegar</button>
+                    </div>
+                    
+                </section>
+        
+                <section class="decodificador">
+                    <div id="inicio">
+                        <div class="contenedor-imagen">
+                            <img src="assets/images/Muñeco.png" alt="Muñeco de Alura">
+                        </div>
+    
+                        <div class="contenedor-texto">
+                            <h2 class="h2Titulo">Ningún mensaje fue encontrado</h2>
+                            <p class="pBajada">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                    <div id="resultado">
+                        <textarea class="texto-copiado"></textarea>
+                    
+                        <div class="contenedor-botones">
+                            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+                        </div>
+                    </div>
+                    
+                </section>
+        
+            </main>
+        
+            <footer>
+        
+                <p class="texto_footer">&copy Sitio desarrollado por <a href="https://www.lloyka.me" target="blank"> Lloyka Pérez</a> para el <a href="https://app.aluracursos.com/user/lloykaperez" target="blank">"Challenge One Codificador 3"</a> de Alura Latam 2022.</p>
+        
+            </footer>
         </div>
-
-        <p class="texto_footer">&copy Sitio desarrollado para el <a href="/" target="_blank">"Callenge One Codificador 3"</a> de Alura Latam 2022.</p>
-
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/679a7442e8.js" crossorigin="anonymous"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
